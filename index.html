@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap Portfolio</title>
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+     <!-- necessary to use modal -->
+     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+  <body>
+    <div class="container">
+      <div class="row banner img-responsive">
+        <div class="col-md-6"><img class="img-responsive" src="images/logo.png" alt="logo">
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class="title-super">Mo Goshinmon</h1>
+          <h4 class= "text-pink">Front-end Ninja</h4>
+        </div>
+      </div>
+
+      <div class="row">
+     	  <div class="col-md-12">
+     		 <img class="img-responsive centerimage main-image" src="images/ninja.jpg" alt="Cavorting ninjas">
+     	  </div>
+      </div>
+
+      <div class="row">
+     	  <div class="col-md-12">
+     		 <h2 class="text-pink subtitle">Featured Work</h2>
+     	  </div>
+      </div>
+
+      <div class="row text-center">
+     	  <div class="col-md-4">
+          <img data-toggle="modal" data-target="#project1" src="images/proj1.gif" alt="Part of a ninja image" class="img-responsive centerimage">
+          <h3 class="text-uppercase tightentext section-title">Project 1</h3>
+          <p class="smalltext">PORTFOLIO PAGE</p>
+          <p class="link-text">https://github.com/udacity/project1</p>
+        </div>
+        <div class="col-md-4">
+          <img data-toggle="modal" data-target="#project2" src="images/proj2.gif" alt="Part of a ninja image" class="img-responsive centerimage">
+          <h3 class="text-uppercase tightentext section-title">Project 2</h3>
+          <p class="smalltext">MY ONLINE RESUME</p>
+          <p class="link-text">https://github.com/udacity/project2</p>
+        </div>
+        <div class="col-md-4">
+         <img data-toggle="modal" data-target="#project3" src="images/proj3.gif" alt="Part of a ninja image" class="img-responsive centerimage">
+          <h3 class="text-uppercase tightentext section-title">Project 3</h3>
+          <p class="smalltext">A GAME! A GAME!</p>
+          <p class="link-text">https://github.com/udacity/project3</p>
+        </div>
+      </div>
+    </div>     
+
+<!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Project 1: A Portfolio Page</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/proj1.gif" alt="First Project">
+            <p></p>
+            <p>This was my first project in this class. I learned a lot about HTML and CSS. Some of the things I learned include:</p>
+            <ul>
+              <li>Googlefonts need to be applied using both the CSS and the HTML on the appropriate Googlefont page (eg. not just HTML that goes in the "head").</li>
+              <li>Text weights can be dictated quickly by the h1, h2 etc styles, and can be adjusted later with CSS.</li>
+              <li> When I'm confused about why my layout isn't working...go to the W3C HTML validator! That saved me from going insane.</li>
+              <li>Adding a Bootstrap modal seemed cool, but without the trigger being a button (and being an image instead) you can't tell it is clickable. Bad UX.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Project 2: Coming Soon</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/proj2.gif" alt="Second Project">
+            <p></p>
+            <p>This will be my second project in this class. I still have quite a ways to go before complete this project.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Project 3: A Game - To Come.</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/proj3.gif" alt="Third Project">
+            <p></p>
+            <p>This will be my third project in this class. I'm naively looking forward to building a game, in spite of the fact that I know it will be way more difficult than it looks.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

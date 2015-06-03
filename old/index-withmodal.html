@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap Portfolio</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+     <!-- necessary to use modal -->
+     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<style type="text/css">
+  
+body {
+  font-family: 'Lato', sans-serif;
+  color: #747704;
+  font-weight: 400;
+}
+hr {
+  border-width: 4px;
+  border-color: #BCBBBB;
+}
+p {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.title-super {
+  font-size: 3.5em;
+  font-weight: 100;
+}
+.title-logo {
+  margin-top: 20px;
+}
+.text-muted {
+  color: #BCBBBB;
+}
+
+.text-thin {
+  color: #BCBBBB;
+  font-weight: 100;
+}
+.section-title {
+  font-size: 2.25em;
+  font-weight:300;
+  margin-top: 12px;
+}
+.subtitle {
+  font-weight:300;
+  padding-top: 10px;
+}
+
+
+</style>
+
+<!-- THINGS I LEARNED DO THIS DOC:
+- Googlefonts need to be applied using css from google site (eg. not just the head html stuff)
+- text weights can be dictated by the h1, h2 etc styles. Don't have to always use font-size. In fact, shouldn't.
+- confused about why layout isn't working? Go to html validator. That saved me.
+- adding a modal seems cool but without it being a button you can't tell it is clickable. Bad UI.
+-  -->
+
+
+</head>
+  <body>
+    <div class="container">
+      <div class="row title-logo darkred img-responsive">
+        <div class="col-md-6"><img class="img-responsive" src="../images/logo-udacity.png"  alt="logo"></div>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class=title-super text-thin>Mo Goshinmon</h1>
+          <h4>Front-end Ninja</h4>
+        </div>
+      </div>
+
+     <div class="row">
+      <div class="col-md-12">
+      	<hr>
+      </div>
+     </div>
+
+     <div class="row">
+     	<div class="col-md-12">
+     		<img class="img-responsive" src="../images/main-image.jpg" alt="main image">
+     	</div>
+     </div>
+
+    <div class="row">
+     	<div class="col-md-12">
+     		<h2 class="text-muted subtitle">Featured Work</h2>
+     	</div>
+    </div>
+
+    <div class="row text-center">
+     	<div class="col-md-4">
+        <img data-toggle="modal" data-target="#project1" src="../images/appify.jpg" alt="image1" class="img-responsive">
+        <h3 class="text-uppercase section-title">Appify</h3>
+        <p>https://github.com/udacity/appify</p>
+      </div>
+      <div class="col-md-4">
+        <img data-toggle="modal" data-target="#project2" src="../images/sunflower.jpg" alt="image2" class="img-responsive">
+        <h3 class="text-uppercase section-title">Sunflower</h3>
+        <p>https://github.com/udacity/sunflower</p>
+      </div>
+      <div class="col-md-4">
+        <img data-toggle="modal" data-target="#project3" src="../images/bokeh.jpg" alt="image3" class="img-responsive">
+        <h3 class="text-uppercase section-title">Bokeh</h3>
+        <p>https://github.com/udacity/bokeh</p>
+    </div>
+  </div>
+  </div>     
+
+<!-- Modal -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="../images/appify.jpg">
+        This was my first project in this class. I learned a lot about HTML and CSS.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Second</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="../images/sunflower.jpg">
+        This was my second project in this class. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Third</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="../images/bokeh.jpg">
+        This was my third project in this class.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
